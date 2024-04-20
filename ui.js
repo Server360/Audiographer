@@ -94,7 +94,7 @@
 
 		app.listenFor ('ShowError', function( message ) {
 			new PKSimpleModal ({
-				title : 'Oh great heavens! Something wrong has occured.',
+				title: 'Oh great heavens! Something wrong has occured.',
 				clss:'pk_modal_anim',
 				ondestroy : function( q ) {
 					app.ui.InteractionHandler.on = false;
@@ -286,7 +286,7 @@
 					},
 
 					{
-						name: 'Load from Computer',
+						name: 'Load Audio from Computer',
 						type: 'file',
 						action: function ( e ) {
 							app.fireEvent ('RequestLoadLocalFile');
@@ -301,7 +301,7 @@
 					},
 					
 					{
-						name: 'Use a URL',
+						name: 'Load Audio from a URL',
 						action: function ( e ) {
 								new PKSimpleModal({
 								  title:'Load audio from URL',
@@ -406,7 +406,7 @@
 
 							// modal that asks for - full file, selection, copy buffer
 							new PKSimpleModal ({
-								title : 'Save Local Draft of...',
+								title: 'Save Local Draft...',
 
 								ondestroy : function( q ) {
 									app.ui.InteractionHandler.on = false;
@@ -515,7 +515,7 @@
 										'<div style="padding:2px 0"><img src="' + obj.thumb + '" /></div>';
 
 									new PKSimpleModal ({
-										title : 'Succesfully Stored',
+										title: 'Succesfully Stored',
 
 										ondestroy : function( q ) {
 											app.ui.InteractionHandler.on = false;
@@ -524,7 +524,7 @@
 
 										buttons:[
 											{
-												title:'OPEN IN NEW WINDOW',
+												title:'Open in New Window',
 												callback: function( q ) {
 													window.open ( window.location.pathname + '?local=' + name);
 
@@ -793,7 +793,7 @@
 												body  : '<div>Open in new window, or in the current one?</div>',
 												buttons:[
 													{
-														title:'OPEN',
+														title:'Open',
 														clss:'pk_modal_a_accpt',
 														callback: function( q ) {
 															overwrite ();
@@ -802,7 +802,7 @@
 														}
 													},
 													{
-														title:'OPEN IN NEW',
+														title:'Open in New',
 														clss:'pk_modal_a_accpt',
 														callback: function( q ) {
 															window.open (window.location.pathname + '?local=' + name);
@@ -1220,7 +1220,7 @@
 
 								buttons:[
 									{
-										title:'OPEN',
+										title:'Open',
 										callback: function( q ) {
 											window.open ('/index-cache.html');
 											q.Destroy ();

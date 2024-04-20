@@ -9,13 +9,13 @@ setTimeout(function () {
 
 			if (PKAE.isMobile) {
 				change -= 15;
-				body_str = 'Tips:<br/>You will not be able to hear audio if your device is on Silent or Do Not Disturb.'+
+				body_str = 'Tips:<br/>Make sure your phone is not on Silent or Do Not Disturb!'+
 				'<img src="phone-switch.jpg" style="max-width:224px;max-height:126px;width:40%;margin: 10px auto; display: block;"/>'+
 				'<br/><br/>';
 			}
 			else {
-				body_str = 'Tips:<br/>Keyboard shortcuts follow the pattern <strong>Shift + <u>Key</u></strong> combo. (eg Shift + Z for undo, Shift + C copy, Shift + X cut, etc.)<br/><br/>';
-				body_str2 = 'Check out the source code on <a href="https://github.com/Server360/Audiographer" target="_blank">Github</a><br/><br/>'; // checkout the code on github
+				body_str = 'Tips:<br/>Keyboard shortcuts follow the pattern <strong>Shift + <u>Key</u></strong>. (e.g., <code>Shift+Z</code> for undo, <code>Shift+C</code> for copy, <code>Shift+X</code> for cut, and so on.)<br/><br/>';
+				body_str2 = 'Get the source code on <a href="https://github.com/Server360/Audiographer" target="_blank">Github</a><br/><br/>'; // checkout the code on github
 			}
 
 			// Welcome to Audiographer,
@@ -26,11 +26,11 @@ setTimeout(function () {
 					PKAE.ui.KeyHandler.removeCallback ('modalTemp');
 			},
 			body:'<div style="overflow:auto;-webkit-overflow-scrolling:touch;max-width:580px;width:calc(100vw - 40px);max-height:calc(100vh - 340px);min-height:110px;font-size:13px; color:#95c6c6;padding-top:7px;">'+
-				'Audiographer is a free and open source web-based audio and waveform editor.<br/>It runs entirely in the browser with no backend and no plugins required!'+
+				'Audiographer is a free and open source web-based audio and waveform editor.<br/>It runs entirely in the browser, with no backend code and no plugins required!'+
 				'<br/><br/><br/>'+
 				body_str+
-				'You can load any type of audio your browser supports and perform operations such as fade in, cut, trim, change the volume, '+
-				'and apply a plethora of audio effects.<br/><br/>'+
+				'You can load any type of audio your browser supports and perform operations such as fade in, cut, trim, or change the volume, '+
+				'and apply a plethora of audio effects, too!<br/><br/>'+
 				body_str2+
 				'</div>',
 			setup:function( q ) {
