@@ -28,8 +28,8 @@ const assets = [
 	'./fonts/icomoon.ttf',
 	'./fonts/icomoon.woff',
 	'./favicon.ico',
-	'./eq.html',
-	'./sp.html',
+	'https://server360.github.io/Audiographer/eq.html',
+	'https://server360.github.io/Audiographer/sp.html',
 	'./test.mp3'
 
 ];
