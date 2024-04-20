@@ -22,8 +22,8 @@
 		};
 		
 	if( !window.FileReader || !document.addEventListener ) {
-		throw( "File API not supported" );
-		readFile = function(){ throw( "File API not supported" ); };
+		throw( "File API not supported." );
+		readFile = function(){ throw( "File API not supported." ); };
 	}
 	else {
 		reader = new FileReader();
@@ -31,8 +31,8 @@
 			/** Error handler (throws error at the console) **/
 			reader.onerror = function( e ) {
 				var message,
-					lut = [ "File not found.", "File coulnot be opened",  
-						"File couldnot be uploaded", "Couldnot read File", "File too large" ];
+					lut = [ "File not found.", "File couldn't be opened.",  
+						"File couldn't be uploaded.", "File couldn't read file.", "File too large." ];
 				// http://www.w3.org/TR/FileAPI/#ErrorDescriptions
 				throw( lut[ ( e.target.error.code - 1 ) ] );
 			},
@@ -94,7 +94,7 @@
 					overlay = document.createElement( 'div' );
 					overlay.id = overlay_id;
 					
-					tmp.innerHTML = "Drag n drop Files!";
+					tmp.innerHTML = "Drag-n-Drop Files!";
 					overlay.appendChild( tmp );
 
 					body.appendChild( overlay );

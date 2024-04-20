@@ -163,7 +163,7 @@
 										setTimeout(function() { app.fireEvent ('DidDownloadFile'); }, 12);
 										app.stopListeningForName ('RequestCancelModal');
 
-										OneUp ('Canceled Loading', 1350);
+										OneUp ('Loading Canceled', 1350);
 									});
 
 									app.fireEvent ('WillDownloadFile');
@@ -176,7 +176,7 @@
 							{
 									//  ----------------
 									new PKSimpleModal ({
-										title : 'Open or append',
+										title : 'Open or Append',
 										clss  : 'pk_modal_anim pk_fnt10',
 										ondestroy : function ( q ) {
 											app.ui.InteractionHandler.on = false;
@@ -184,7 +184,7 @@
 										},
 										buttons:[
 											{
-												title:'OPEN NEW',
+												title:'Open New',
 												callback: function( q ) {
 													wavesurfer.backend._add = 0;
 													func ();
@@ -192,7 +192,7 @@
 												}
 											},
 											{
-												title:'ADD IN EXISTING',
+												title:'Add to Existing',
 												callback: function( q ) {
 													wavesurfer.backend._add = 1;
 													func ();
@@ -427,7 +427,7 @@
 			// loaded successfully
 			app.stopListeningForName ('RequestCancelModal');
 
-			setTimeout(function () {OneUp ('Loaded Successfully')}, 180);
+			setTimeout(function () {OneUp ('Successfully Loaded!')}, 180);
 
 			// check if the audio file is mono or stereo and rebuild both UI and audio engine accordingly...
 			if (wavesurfer.backend.buffer.numberOfChannels === 1) {

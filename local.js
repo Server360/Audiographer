@@ -227,7 +227,7 @@
 			var ret = [];
 
 			req.onerror = function(event) {
-			   console.err("error fetching data");
+			   console.err("Error fetching data");
 			};
 			req.onsuccess = function(event) {
 			   var cursor = event.target.result;
