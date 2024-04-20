@@ -1222,7 +1222,7 @@
 									{
 										title:'Open',
 										callback: function( q ) {
-											window.open ('/index-cache.html');
+											window.open ('https://server360.github.io/Audiographer/index-cache.html');
 											q.Destroy ();
 										}
 									}
@@ -1255,7 +1255,7 @@
 					{
 						name   : 'About',
 						action : function () {
-							window.open ('/about.html');
+							window.open ('https://server360.github.io/Audiographer/about.html');
 						}
 					},
 
