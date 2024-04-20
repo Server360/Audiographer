@@ -1,6 +1,6 @@
 {
-  "name": "Audiomass - Audio Editor",
-  "short_name": "Audiomass - Audio Editor",
+  "name": "Audiographer - Audio Editor",
+  "short_name": "Audiographer - Audio Editor",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

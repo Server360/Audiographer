@@ -2,7 +2,7 @@
 	'use strict';
 
 	var db;
-	var db_name    = 'audiomass';
+	var db_name    = 'audiographer';
 	var db_version = 1;
 	var db_ready   = false;
 

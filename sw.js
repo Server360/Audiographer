@@ -35,7 +35,7 @@ const assets = [
 ];
 
 self.addEventListener( 'install', async function () {
-	const cache = await caches.open( 'audiomass' );
+	const cache = await caches.open( 'audiographer' );
 	assets.forEach( function ( asset ) {
 		cache.add( asset ).catch( function () {
 			console.error( '[SW] Cound\'t cache:', asset );

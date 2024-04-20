@@ -6,11 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>  
 
-	<meta name="description" content="AudioMass is a free full-featured web-based audio &amp; waveform editing tool"/>
+	<meta name="description" content="Audiographer is a free full-featured web-based audio &amp; waveform editing tool"/>
 	<meta property="og:image" content="https://audiomass.co/icon.jpg"/>
-	<meta property="og:title" content="AudioMass">
-	<meta property="og:url" content="https://audiomass.co/">
-	<meta property="og:description" content="AudioMass is a free full-featured web-based audio &amp; waveform editing tool">
+	<meta property="og:title" content="Audiographer">
+	<meta property="og:url" content="https://server360.github.io/Audiographer/">
+	<meta property="og:description" content="Audiographer is a free full-featured web-based audio &amp; waveform editing tool">
 	<meta name="keywords" content="Audiographer, WebAudio, WaveForm, audio editing, free audio editing, audio tool, waveform editor, sound editor, open source">
 	<link href="/ico.ico" rel="shortcut icon">
 
@@ -101,13 +101,13 @@
 
 
 <div>
-<h1>Introducing Audiographer, (<a href="https://audiomass.co" target="_blank">https://audiomass.co</a>) an open source web-based audio and waveform editing tool.</h1>
+<h1>Introducing Audiographer, (<a href="https://github.com/Server360/Audiographer" target="_blank">https://github.com/Server360/Audiographer</a>) an open source web-based audio and waveform editing tool.</h1>
 
 
 <img class="top" src="/about/audiomass_top.jpg" />
 
 
-<p>Audiographer lets you record, or use your existing audio tracks, and modify them by trimming, cutting, pasting or applying a plethora of effects, from compression and paragraphic equalizers to reverb, delay and distortion fx. AudioMass also supports more than 20 hotkeys combinations and a dynamic responsive interface to ensure ease of use and that your producivity remains high.
+<p>Audiographer lets you record, or use your existing audio tracks, and modify them by trimming, cutting, pasting or applying a plethora of effects, from compression and paragraphic equalizers to reverb, delay and distortion fx. Audiographer also supports more than 20 hotkeys combinations and a dynamic responsive interface to ensure ease of use and that your producivity remains high.
 it is written solely in plain old-school javascript, weights approximately 65kb and has no backend or framework dependencies.</p>
 
 <img class="mid" src="/about/audiomass_support.jpg" />
@@ -171,7 +171,7 @@ Once the file is loaded and you can view the waveform, zoom in, pan around, or s
 <div>
 <h3>The story behind Audiographer. And a short rant on web interfaces.</h3>
 
-<p>I wrote AudioMass back in June 2018 and it stayed dormant on my hard disk until I decided to share it with the world today (July 13th, 19 -- but you might be seeing this in 2020. Hi!!).
+<p>I wrote Audiographer back in June 2018 and it stayed dormant on my hard disk until I decided to share it with the world today (July 13th, 19 -- but you might be seeing this in 2020. Hi!!).
 It started as a personal small tool for quick visualization of waveforms. Later I added the ability to cut/copy/paste as well as fade in and out. And soon after good 'ol feature creep and perfectionism took over! Soon after, it turned to a challenge to see how close to a full-featured waveform editor it can get, whilst maintaining acceptable performance and small filesize.</p>
 
 <p>In general I am a big fan of the interfaces of DAWs <i>(Digital Audio Workstations)</i>, they are extremely, complex, intricate, versatile, and they manage to remain visually pleasant even through their infinite options and knobs. Many times I feel the web has taken a very wrong turn, as amazing interfaces such as...
@@ -185,7 +185,7 @@ It started as a personal small tool for quick visualization of waveforms. Later 
 
 <br />
 
-<p>Existed for more than 10-15 years now, while we are struggling with animating some rectangles for 60fps... So for AudioMass I wanted to try and make a fast and performant interface. Drawing inspiration from the examples I mentioned earlier rather than the tradiional web development practices. This is my unconvincing but truthfull excuse as to why the code is ugly; it is focused on being fast and getting the job done, with little regard on structure.</p>
+<p>Existed for more than 10-15 years now, while we are struggling with animating some rectangles for 60fps... So for Audiographer I wanted to try and make a fast and performant interface. Drawing inspiration from the examples I mentioned earlier rather than the tradiional web development practices. This is my unconvincing but truthfull excuse as to why the code is ugly; it is focused on being fast and getting the job done, with little regard on structure.</p>
 
 </div>
 
@@ -265,7 +265,7 @@ track.onPlayStop = function () {
 
 <p>Now this is completely decoupled and dependency free! The button will set its state according to the events it receives, and both the button and the spacebar key rely on the same mechanisms.
 You may notice the vocabulary we are using. <i>"Request"</i>, <i>"Will"</i> and <i>"Did"</i>. These are arbitrarilly chosen to impose some extra structure.<br /> <i>"Request"</i> denotes intent to perform an action, it is not guaranteed that the action will execute as there might be conditions preventing it (eg unitialized or still loading objects). <i>"Will"</i> means that the conditions passed and we are attempting to perform the action. And <i>"Did"</i> means that the action just got performed.<br />
-It might be a bit too verbose, but it worked very well for structuring AudioMass's interface.</p>
+It might be a bit too verbose, but it worked very well for structuring Audiographer's interface.</p>
 </div>
 
 <hr />

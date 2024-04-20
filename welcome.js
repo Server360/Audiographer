@@ -15,10 +15,10 @@ setTimeout(function () {
 			}
 			else {
 				body_str = 'Tips:<br/>Keyboard shortcuts follow the pattern <strong>Shift + <u>Key</u></strong> combo. (eg Shift + Z for undo, Shift + C copy, Shift + X cut, etc.)<br/><br/>';
-				body_str2 = 'Check out the source code on <a href="https://github.com/pkalogiros/audiomass" target="_blank">Github</a><br/><br/>'; // checkout the code on github
+				body_str2 = 'Check out the source code on <a href="https://github.com/Server360/Audiographer" target="_blank">Github</a><br/><br/>'; // checkout the code on github
 			}
 
-			// Welcome to AudioMass,
+			// Welcome to Audiographer,
 			var md = new PKSimpleModal({
 				title: '<font style="font-size:15px">Welcome to Audiographer!</font>',
 				ondestroy: function( q ) {
