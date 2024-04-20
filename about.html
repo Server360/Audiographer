@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>AudioMass - About</title>
+	<title>About Audiographer</title>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>  
@@ -11,7 +11,7 @@
 	<meta property="og:title" content="AudioMass">
 	<meta property="og:url" content="https://audiomass.co/">
 	<meta property="og:description" content="AudioMass is a free full-featured web-based audio &amp; waveform editing tool">
-	<meta name="keywords" content="AudioMass, WebAudio, WaveForm, audio editing, free audio editing, audio tool, waveform editor, sound editor, open source">
+	<meta name="keywords" content="Audiographer, WebAudio, WaveForm, audio editing, free audio editing, audio tool, waveform editor, sound editor, open source">
 	<link href="/ico.ico" rel="shortcut icon">
 
 <style>
@@ -101,13 +101,13 @@
 
 
 <div>
-<h1>Introducing AudioMass (<a href="https://audiomass.co" target="_blank">https://audiomass.co</a>) an open-source web based audio and waveform editing tool.</h1>
+<h1>Introducing Audiographer, (<a href="https://audiomass.co" target="_blank">https://audiomass.co</a>) an open source web-based audio and waveform editing tool.</h1>
 
 
 <img class="top" src="/about/audiomass_top.jpg" />
 
 
-<p>AudioMass lets you record, or use your existing audio tracks, and modify them by trimming, cutting, pasting or applying a plethora of effects, from compression and paragraphic equalizers to reverb, delay and distortion fx. AudioMass also supports more than 20 hotkeys combinations and a dynamic responsive interface to ensure ease of use and that your producivity remains high.
+<p>Audiographer lets you record, or use your existing audio tracks, and modify them by trimming, cutting, pasting or applying a plethora of effects, from compression and paragraphic equalizers to reverb, delay and distortion fx. AudioMass also supports more than 20 hotkeys combinations and a dynamic responsive interface to ensure ease of use and that your producivity remains high.
 it is written solely in plain old-school javascript, weights approximately 65kb and has no backend or framework dependencies.</p>
 
 <img class="mid" src="/about/audiomass_support.jpg" />
@@ -156,9 +156,9 @@ Once the file is loaded and you can view the waveform, zoom in, pan around, or s
 <img class="mid" src="/about/audiomass_3.jpg" />
 
 
-<h3>Exporting to mp3</h3>
+<h3>Exporting to MP3</h3>
 
-<p>In order to export back to mp3, click on 'File', then 'Export to mp3', and follow the modal's instructions.</p>
+<p>In order to export back to MP3, click on 'File', then 'Export to MP3', and follow the modal's instructions.</p>
 
 <img class="mid" src="/about/audiomass_4.jpg" />
 
@@ -167,9 +167,9 @@ Once the file is loaded and you can view the waveform, zoom in, pan around, or s
 
 <hr />
 
-
+<!--
 <div>
-<h3>The story behind AudioMass. And a short rant on web interfaces.</h3>
+<h3>The story behind Audiographer. And a short rant on web interfaces.</h3>
 
 <p>I wrote AudioMass back in June 2018 and it stayed dormant on my hard disk until I decided to share it with the world today (July 13th, 19 -- but you might be seeing this in 2020. Hi!!).
 It started as a personal small tool for quick visualization of waveforms. Later I added the ability to cut/copy/paste as well as fade in and out. And soon after good 'ol feature creep and perfectionism took over! Soon after, it turned to a challenge to see how close to a full-featured waveform editor it can get, whilst maintaining acceptable performance and small filesize.</p>
@@ -192,7 +192,7 @@ It started as a personal small tool for quick visualization of waveforms. Later 
 <hr />
 
 <div>
-
+	
 <h3>Building the interface</h3>
 
 <p>Let's say we have a <i>"PLAY"</i> button and when we press it the track begins to play. I suppose we would want the button's color and state to reflect that the track is now playing. So naively we would do something like;</p>
@@ -310,6 +310,8 @@ It might be a bit too verbose, but it worked very well for structuring AudioMass
 
 <p>However, the biggest issue I encountered, is the Web Audio API itself. Every operation results in iterating over multiple long arrays per frame. Eventually the garbage collector fires and crackling is introduced. Only way to go around this is to use a small fftSize, but then the frequency range we have to work with is very narrow. Perhaps a pure WASM implementation would outperform trying to modify audio signals with JS. Only one way to find out I guess :) </p>
 <p>Additionally, <i>decodeAudioData</i> provides no progress callback, and no way of cancelling it. So if you attempt to load a huge audio file, you will waste resources until it gets processed. There is no way around this currently and it can get annoying if you push a big file by mistake.</p>
+
+-->
 
 </div>
 
